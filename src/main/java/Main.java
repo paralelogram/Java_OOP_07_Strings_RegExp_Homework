@@ -4,11 +4,14 @@ public class Main {
 
     public static void main(String [] args) {
         Scanner scanner = new Scanner(System.in);
+        
         System.out.println("input sentence of five words");
         String snt = scanner.nextLine();
         String[] subsnt = snt.split(" ");
+        
         int[] n = new int[subsnt.length];
         int max = n[0];
+        
         for (int i = 0; i < subsnt.length; i++) {
             n[i] = subsnt[i].length();
         }
@@ -26,6 +29,5 @@ public class Main {
         }
         StringBuffer sa = new StringBuffer(subsnt[1]);
         System.out.println("reversed second word: " + sa.reverse());
-
     }
 }
